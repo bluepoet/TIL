@@ -8,5 +8,5 @@ Docker는 리눅스 커널의 cggroups와 namespaces를 기반으로 하여 이�
 
 # 3장 Docker 사용해보기
 
-Docker의 명령은 docker run, docker push와 같이 docker <명령> 형식이며, 항상 root 권한으로 실행해야 합니다
+Docker의 명령은 docker run, docker push와 같이 docker \<명령\> 형식이며, 항상 root 권한으로 실행해야 합니다
 
