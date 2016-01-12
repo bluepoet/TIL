@@ -5,3 +5,8 @@ Docker는 하드웨어를 가상화하는 계층이 없기 때문에 메모리 �
 호스트와 거의 동일한 속도를 낸다.
 
 Docker는 리눅스 커널의 cggroups와 namespaces를 기반으로 하여 이미지, 컨테이너 생성 및 관리 기능과 다양한 부가 기능을 제공합니다.
+
+# 3장 Docker 사용해보기
+
+Docker의 명령은 docker run, docker push와 같이 docker <명령> 형식이며, 항상 root 권한으로 실행해야 합니다
+
