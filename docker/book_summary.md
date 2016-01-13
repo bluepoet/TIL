@@ -87,4 +87,12 @@ sudo docker run --name hello-nginx -d -p 80:80 -v /root/data:/data hello:0.1
 sudo docker ps
 ```
 
+## 의문
+
+```
+로컬 맥에서 docker-machine ssh default로 도커를 띄운다음 nginx이미지를 빌드해 만들어서 run하면 
+
+왜 ifconfig의 docker0, eth0, eth1 ip중 eth1이 적용될까?
+```
+
 
