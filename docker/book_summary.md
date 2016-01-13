@@ -10,3 +10,81 @@ Docker는 리눅스 커널의 cggroups와 namespaces를 기반으로 하여 이�
 
 Docker의 명령은 docker run, docker push와 같이 docker \<명령\> 형식이며, 항상 root 권한으로 실행해야 합니다
 
+### pull 명령으로 이미지 받기
+
+```
+sudo docker pull ubuntu:latest
+```
+
+### images 명령으로 이미지 목록 출력하기
+
+```
+sudo docker images
+```
+
+### run 명령으로 컨테이너 생성하기
+
+```
+sudo docker run -i -t --name hello ubuntu /bin/bash
+```
+
+### ps 명령으로 컨테이너 목록 확인하기
+
+```
+sudo docker ps -a
+```
+
+### start 명령으로 컨테이너 시작하기
+
+``` 
+sudo docker start hello
+```
+
+### restart 명령으로 컨테이너 재시작하기
+
+``` 
+sudo docker restart hello
+```
+
+### attach 명령으로 컨테이너 접속하기
+
+``` 
+sudo docker attach hello
+```
+
+### exec 명령으로 외부에서 컨테이너 안의 명령 실행하기
+
+``` 
+sudo docker exec hello echo "hello world"
+```
+
+### stop 명령으로 컨테이너 정지하기
+
+``` 
+sudo docker stop hello
+```
+
+### rm 명령으로 컨테이너 삭제하기
+
+``` 
+sudo docker rm hello
+sudo docker ps -a
+```
+
+### rmi 명령으로 이미지 삭제하기
+
+``` 
+sudo docker rmi ubuntu:latest
+```
+
+# 4장 Docker 이미지 생성하기
+
+### build 명령으로 이미지 생성하기
+
+```
+sudo docker build --tag hello:0.1
+sudo docker run --name hello-nginx -d -p 80:80 -v /root/data:/data hello:0.1
+sudo docker ps
+```
+
+
