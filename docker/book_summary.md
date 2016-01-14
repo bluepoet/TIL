@@ -95,4 +95,36 @@ sudo docker ps
 왜 ifconfig의 docker0, eth0, eth1 ip중 eth1이 적용될까?
 ```
 
+5장 Docker 살펴보기
+
+history 명령으로 이미지 히스토리 살펴보기
+
+```
+docker history hello:0.1
+```
+
+cp 명령으로 파일 꺼내기
+
+```
+sudo docker cp hello-nginx:/etc/nginx/nginx.conf ./
+```
+
+commit 명령으로 컨테이너의 변경사항을 이미지로 생성하기
+
+```
+sudo docker commit -a "Foo Bar <foo@bar.com>" -m "add hello.txt" hello-nginx hello:0.2
+```
+
+diff 명령으로 컨테이너에서 변경된 파일 확인하기
+
+```
+sudo docker diff hello-nginx
+```
+
+inspect 명령으로 세부 정보 확인하기
+
+```
+sudo dokcer inspect hello-nginx
+```
+
 
