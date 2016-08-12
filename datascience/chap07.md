@@ -107,3 +107,11 @@
 #### 7.4.9 사용자 유지: 해석가능성 대 예측력
 
 - 모든 변수를 가지고 특징선택을 수행하기 원하겠지만, 사용자 속성에 따른 조건부로 내가 무엇인가 할 수 있는 변수들에 초점을 맞춰야 함
+
+#### 참고URL
+
+- http://ai.xprize.org/
+- https://www.kaggle.com/c/facebook-recruiting-iii-keyword-extraction
+- https://www.kaggle.com/c/facebook-recruiting-iii-keyword-extraction
+- https://inclass.kaggle.com/c/movie/data
+- http://jmlr.org/papers/volume3/guyon03a/guyon03a.pdf
